@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
     <title>Bob's Bagels</title>
 </head>
 
 <body>
-    <img src="#" alt="background bagel image">
-    <section class="container text-center">
-        <nav class="row">
-            <div class="col-4"><img src="#"></div>
-            <div class="col-1"><a>Home</a></div>
-            <div class="col-1"><a>Bagel Menu</a></div>
-            <div class="col-1"><a>Order Online</a></div>
-            <div class="col-1"><a>Login/Sign Up</a></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <section class="container text-center" id="header_nav">
+        <nav class="row" id="nav">
+            <div class="col-3"><img src="./img/bagel_logo.png" id="logo"></div>
+            <div class="nav_bar col-6">
+                <a class="nav_item">Home</a>
+                <a class="nav_item">Bagel Menu</a>
+                <a class="nav_item">Order Online</a>
+                <a class="nav_item">Login/Sign Up</a>
+            </div>
         </nav>
         <div class="row">
-            <div class="col4">
+            <div class="nav_title col4">
                 <h1>Bob's Bagels</h1>
                 <p>Freshly baked, filled and served to you daily</p>
             </div>
         </div>
-
     </section>
-    <section class="container text-center">
+    <section class="about container">
         <div class="row">
-            <div class="col-5">
+            <div class="about_description col-6">
                 <h2>Baking Bagels since 1998</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fugiat beatae ipsa minus aliquam
                     expedita
@@ -42,19 +52,27 @@
                     a!
                 </p>
             </div>
-            <div class="col-5">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="col-6">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="..." alt="First slide">
+                            <img class="d-block w-100" src="./img/bagel_2.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Second slide">
+                            <img class="d-block w-100" src="./img/bagel_3.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
+                            <img class="d-block w-100" src="./img/bagel_4.jpg" alt="Third slide">
                         </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
