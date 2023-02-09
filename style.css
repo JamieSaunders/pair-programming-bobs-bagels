@@ -14,13 +14,10 @@
 
 .nav_bar {
     background-color: rgba(170, 170, 170, 0.8);
-    padding: 10px 0;
-    margin-top: 20px;
     max-height: 50px;
-}
-
-.nav_item {
-    padding: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav_title {
