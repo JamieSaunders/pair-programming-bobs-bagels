@@ -1,5 +1,6 @@
 #logo {
     max-width: 100px;
+    padding-bottom: 10px;
 }
 
 #header_nav {
@@ -15,9 +16,14 @@
 .nav_bar {
     background-color: rgba(170, 170, 170, 0.8);
     max-height: 50px;
-    margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav_bar {
+        margin-top: 20px;
+    }
 }
 
 .nav_title {
@@ -34,6 +40,7 @@
 
 .about {
     border: solid;
+    margin-bottom: 10px;
 }
 
 .about_description {
